@@ -1,0 +1,97 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*section success_story styles start*/
+.section_story {
+  padding: 115px 165px;
+}
+.story_container {
+  display: flex;
+  flex-direction: row;
+  padding: 118px 0px 116px 95px;
+  max-width: 1110px;
+  max-height: 700px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: var(--Base-BG-Secondary, #e7ebfc);
+}
+.section_story-block {
+  display: flex;
+  flex-direction: column;
+}
+.section_story-h2 {
+  padding-bottom: 32px;
+  width: 572px;
+  color: var(--Base-Text-Primary, #191919);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Headings/H3 */
+  font-family: Inter;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 123.81% */
+  letter-spacing: -0.76px;
+}
+.success_story {
+  padding-bottom: 32px;
+  max-width: 588px;
+  color: var(--Base-Text-Secondary, #1e1e1e);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px; /* 123.81% */
+  letter-spacing: -0.76px;
+}
+.button_success-story {
+  margin-top: -2.5px;
+  padding: 0px 0px 30px 0px;
+  width: 235px;
+  color: var(--Global-Primary, #2e4fd7);
+  /* Paragraph/16B */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.29px;
+  border: 0px;
+  background: none;
+}
+.button_arrow-story {
+  padding-left: 10px;
+}
+.woomen2 {
+  max-width: 380px;
+  max-height: 420px;
+  padding-left: 47px;
+}
+/*section success_story styles end*/

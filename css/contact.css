@@ -1,0 +1,393 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/*section contact style start*/
+.section_contact-us {
+  background: #e7ebfc;
+  padding: 110px 128px 72px 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 194px;
+}
+.section_contact-title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact_title {
+  color: #000;
+
+  font-feature-settings: "clig" off, "liga" off;
+  /* Headings/H1 */
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px; /* 112.5% */
+  letter-spacing: -1.16px;
+  text-transform: capitalize;
+}
+.contact_subtitle {
+  width: 480px;
+  color: #64626a;
+  padding-bottom: 98px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  letter-spacing: 0.1px;
+}
+.contact_call-email {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.container_call {
+  max-width: 180px;
+  max-height: 74px;
+  background: #2e4fd7;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px 16px 20px;
+}
+.call_us {
+  width: 48px;
+  color: var(--Base-Text-On-Dark, #fff);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.175px;
+  padding-bottom: 7px;
+}
+.tel_nummer {
+  width: 127px;
+  color: var(--Base-Text-On-Dark, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+.container_email {
+  max-width: 205px;
+  max-height: 74px;
+  border: 1px solid var(--Global-Primary, #2e4fd7);
+  background: var(--Base-BG-Primary, #fff);
+  padding: 15px 12px 16px 20px;
+}
+.email_us {
+  width: 59;
+  color: var(--Global-Primary, #2e4fd7);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.175px;
+  padding-bottom: 7px;
+}
+.email {
+  width: 173px;
+  color: var(--Global-Primary, #2e4fd7);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+.logo_contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 58px 252px 114px 160px;
+}
+/*card styles start*/
+.container_card-talk {
+  position: absolute;
+
+  transform: translateX(169%) translateY(-103.5%);
+}
+.contact_card-container {
+  width: 487px;
+  height: 662px;
+  border: 1px solid var(--Base-Boarder, #b4b4b4);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card_list-all {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 30px 26px;
+}
+.card_h3 {
+  color: #000;
+  width: 160px;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 18px;
+}
+.card_p {
+  width: 390px;
+  color: #64626a;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.2px;
+  padding-bottom: 40px;
+}
+.enter_account {
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  padding-bottom: 24px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.your_name-email {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+.star {
+  color: var(--Global-Primary, #2e4fd7);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.enter_email-name {
+  max-width: 204px;
+  max-height: 52px;
+}
+.enter_your {
+  width: 112px;
+  flex-shrink: 0;
+  border: 1px solid var(--Base-Boarder, #b4b4b4);
+  background: #fff;
+  color: #b3b1b7;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.175px;
+  padding: 17px 75px 18px 18px;
+}
+.chose_topik {
+  padding-bottom: 24px;
+}
+.chose_text {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-bottom: 11px;
+}
+.select_topik {
+  max-width: 427px;
+  height: 52px;
+  border: 1px solid var(--Base-Boarder, #b4b4b4);
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 260px;
+}
+.select_text {
+  width: 114px;
+  height: 17px;
+  color: #b3b1b7;
+  padding-left: 18px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.175px;
+}
+.message_card {
+  padding-bottom: 28px;
+}
+.message_block {
+  max-width: 427px;
+  height: 122px;
+  border: 1px solid var(--Base-Boarder, #b4b4b4);
+  background: #fff;
+}
+.message_text {
+  color: #000;
+  padding-bottom: 11px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+.message_block-text {
+  width: 135px;
+  color: #b3b1b7;
+  padding: 17px 274px 88px 18px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.175px;
+}
+.button_contact-us {
+  width: 427px;
+  height: 56px;
+  flex-shrink: 0;
+  background: var(--Global-Primary, #2e4fd7);
+}
+.button_contact-text {
+  width: 90px;
+  color: #fff;
+  padding: 17px 168.5px 20px 169.5px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+/*section oficces styles start*/
+.section_offices {
+  padding: 88px 149px 173px 150px;
+}
+.title_sub-title {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 86px;
+}
+.offices_title {
+  color: #000;
+  max-width: 274px;
+  height: 62px;
+  font-feature-settings: "clig" off, "liga" off;
+  padding-right: 310px;
+  font-family: Inter;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62px; /* 119.231% */
+  letter-spacing: -0.94px;
+}
+.offices_sub-title {
+  max-width: 420px;
+  height: 60px;
+  color: #64626a;
+
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  letter-spacing: -0.36px;
+}
+.all_card {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.offices_card,
+.map_card {
+  border-radius: 0px 0px 20px 20px;
+  border: 1px solid #ececec;
+  background: #fff;
+  max-width: 540px;
+  max-height: 480px;
+}
+.card_h-text {
+  color: var(--Base-Text-Primary, #191919);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Headings/H4 */
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 118.75% */
+  letter-spacing: -0.58px;
+  padding: 30px 245px 10px 30px;
+}
+.country {
+  width: 460px;
+  color: var(--Base-Text-Secondary, #1e1e1e);
+  /* Paragraph/20 */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  letter-spacing: -0.36px;
+  padding: 0px 50px 28px 30px;
+}
+.section_offices-button {
+  max-width: 155px;
+  max-height: 24px;
+  align-items: center;
+  padding: 0px 350px 30px 30px;
+}
+.open_map {
+  color: var(--Global-Primary, #2e4fd7);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: none;
+  border: 0px;
+}

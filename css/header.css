@@ -1,0 +1,116 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*header styles start*/
+.header {
+  background: #fefefe;
+  max-width: 1440px;
+  max-height: 80px;
+}
+.header_navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 22px 130px 20px 110px;
+}
+.header_logo {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  align-items: center;
+}
+.header_logo-text {
+  color: #1a1a1a;
+  font-family: inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+}
+.header_menu-list {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 31px;
+  padding: 0px 370px 0px 50px;
+}
+.header_link,
+.header_menu-item {
+  text-decoration: none;
+  color: var(--Base-Text-Secondary, #1e1e1e);
+  /* Paragraph/16 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.29px;
+  text-decoration: none;
+  text-shadow: #1a1a1a 2px 3px 3px;
+}
+.header_menu-item:hover,
+.header_menu-item:focus,
+.header_menu-item:active {
+  opacity: 0.75;
+}
+.header_menu-item:hover {
+  transform: rotate(-360deg) scale(1.5, 1.5);
+  transition: all 0.8s ease 0.1s;
+}
+.header_navigation-buttons:hover {
+  opacity: 0.5;
+  transform: rotate(-360deg) scale(1.5, 1.5);
+  transition: all 0.8s ease 0.1s;
+}
+
+.header_navigation-buttons {
+  width: 172px;
+  height: 32px;
+  display: inline-flex;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 1px;
+  background: var(--Global-Primary, #2e4fd7);
+  box-shadow: #1a1a1a 4px 2px 10px;
+}
+.header_button-text {
+  color: var(--Base-Text-On-Dark, #fff);
+  /* Paragraph/14 */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.25px;
+  background: none;
+  border: none;
+}
